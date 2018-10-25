@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lzW-Az-FKb">
+                                <rect key="frame" x="168.5" y="152" width="38" height="30"/>
+                                <state key="normal" title="pop_1"/>
+                                <connections>
+                                    <action selector="pop1Clicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KWw-p7-JPk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pul-tQ-sZE">
+                                <rect key="frame" x="166.5" y="217" width="42" height="30"/>
+                                <state key="normal" title="pop_2"/>
+                                <connections>
+                                    <action selector="pop2Clicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bKB-0W-gAa"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="需要弹出的视图是单独的view，加载到弹框view里面" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mBg-uw-TcR">
+                                <rect key="frame" x="22.5" y="100" width="330" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="mBg-uw-TcR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="Mv4-j9-HwF"/>
+                            <constraint firstItem="lzW-Az-FKb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Oum-1G-QwE"/>
+                            <constraint firstItem="mBg-uw-TcR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cgw-As-vaP"/>
+                            <constraint firstItem="Pul-tQ-sZE" firstAttribute="top" secondItem="lzW-Az-FKb" secondAttribute="bottom" constant="35" id="cxW-QK-zTn"/>
+                            <constraint firstItem="lzW-Az-FKb" firstAttribute="top" secondItem="mBg-uw-TcR" secondAttribute="bottom" constant="35" id="ih9-0R-4DJ"/>
+                            <constraint firstItem="Pul-tQ-sZE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="s6G-Uh-OdL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

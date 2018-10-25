@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PrivacyView" customModule="ChXPopViewDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="400"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="khT-e0-UMY" userLabel="AlertView">
+                    <rect key="frame" x="0.0" y="0.0" width="300" height="400"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="用户隐私协议" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4nG-ga-xSW">
+                            <rect key="frame" x="98" y="30" width="104" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4nz-Ag-pHj">
+                            <rect key="frame" x="249" y="20" width="31" height="30"/>
+                            <state key="normal" title="关闭"/>
+                            <connections>
+                                <action selector="clickedClose:" destination="iN0-l3-epB" eventType="touchUpInside" id="WZw-BR-N6P"/>
+                            </connections>
+                        </button>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="grj-p2-V2U">
+                            <rect key="frame" x="20" y="101" width="260" height="248.5"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <string key="text">1.1 保宝网的所有权和运营权归深圳市永兴元科技有限公司所有。
+1.2 用户在注册之前，应当仔细阅读本协议，并同意遵守本协议后方可成为注册用户。一旦注册成功，则用户与保宝网之间自动形成协议关系，用户应当受本协议的约束。用户在使用特殊的服务或产品时，应当同意接受相关协议后方能使用。
+1.3 本协议则可由保宝网随时更新，用户应当及时关注并同意本站不承担通知义务。本站的通知、公告、声明或其它类似内容是本协议的一部分。
+
+</string>
+                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="13"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IRY-8x-mzm" userLabel="line">
+                            <rect key="frame" x="0.0" y="349.5" width="300" height="1"/>
+                            <color key="backgroundColor" red="0.85490196078431369" green="0.85490196078431369" blue="0.87058823529411766" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="eEY-jn-upq"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ll6-h3-4nE">
+                            <rect key="frame" x="0.0" y="350" width="300" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="iDU-xL-ZGW"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <state key="normal" title="好，我已阅读并同意此协议">
+                                <color key="titleColor" red="0.24313725490196078" green="0.51372549019607838" blue="0.90196078431372551" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="clickedSure:" destination="iN0-l3-epB" eventType="touchUpInside" id="vo9-la-xN9"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="一、总则" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4XJ-P6-wnH">
+                            <rect key="frame" x="20" y="78" width="58" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="400" id="EaD-Cv-SCh"/>
+                        <constraint firstItem="4nG-ga-xSW" firstAttribute="top" secondItem="khT-e0-UMY" secondAttribute="top" constant="30" id="Jka-KA-XzQ"/>
+                        <constraint firstItem="4XJ-P6-wnH" firstAttribute="leading" secondItem="grj-p2-V2U" secondAttribute="leading" id="Qjd-E0-HHL"/>
+                        <constraint firstAttribute="bottom" secondItem="Ll6-h3-4nE" secondAttribute="bottom" id="QyR-x0-qi0"/>
+                        <constraint firstItem="Ll6-h3-4nE" firstAttribute="top" secondItem="IRY-8x-mzm" secondAttribute="bottom" constant="-0.5" id="UI7-MP-3un"/>
+                        <constraint firstItem="IRY-8x-mzm" firstAttribute="top" secondItem="grj-p2-V2U" secondAttribute="bottom" id="VBT-tI-sZR"/>
+                        <constraint firstItem="IRY-8x-mzm" firstAttribute="leading" secondItem="khT-e0-UMY" secondAttribute="leading" id="Vud-2a-da3"/>
+                        <constraint firstItem="grj-p2-V2U" firstAttribute="leading" secondItem="khT-e0-UMY" secondAttribute="leading" constant="20" id="dhR-DT-zsx"/>
+                        <constraint firstAttribute="trailing" secondItem="Ll6-h3-4nE" secondAttribute="trailing" id="gX5-WQ-xZR"/>
+                        <constraint firstItem="4nz-Ag-pHj" firstAttribute="top" secondItem="khT-e0-UMY" secondAttribute="top" constant="20" id="hME-UR-DJO"/>
+                        <constraint firstItem="4nG-ga-xSW" firstAttribute="centerX" secondItem="khT-e0-UMY" secondAttribute="centerX" id="hWz-Lw-NuP"/>
+                        <constraint firstItem="grj-p2-V2U" firstAttribute="top" secondItem="4nG-ga-xSW" secondAttribute="bottom" constant="50" id="mAn-0R-cmp"/>
+                        <constraint firstItem="grj-p2-V2U" firstAttribute="top" secondItem="4XJ-P6-wnH" secondAttribute="bottom" constant="6" id="oRQ-3M-QVZ"/>
+                        <constraint firstAttribute="trailing" secondItem="grj-p2-V2U" secondAttribute="trailing" constant="20" id="saP-bK-bvo"/>
+                        <constraint firstAttribute="width" constant="300" id="xHb-0C-tGi"/>
+                        <constraint firstAttribute="trailing" secondItem="4nz-Ag-pHj" secondAttribute="trailing" constant="20" id="yeh-aQ-M5z"/>
+                        <constraint firstAttribute="trailing" secondItem="IRY-8x-mzm" secondAttribute="trailing" id="yjE-YP-ldH"/>
+                        <constraint firstItem="Ll6-h3-4nE" firstAttribute="leading" secondItem="khT-e0-UMY" secondAttribute="leading" id="z73-rc-e0Z"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="13"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="khT-e0-UMY" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Hsc-dU-ExC"/>
+                <constraint firstItem="khT-e0-UMY" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="v1W-qR-wMj"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="textView" destination="grj-p2-V2U" id="9MI-EL-lkE"/>
+            </connections>
+            <point key="canvasLocation" x="-78" y="-78"/>
+        </view>
+    </objects>
+</document>
